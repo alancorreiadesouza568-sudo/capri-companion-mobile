@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Capri Companion - Mobile App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="capri-container">
+    <!-- Viewport do Avatar com suporte a toques e animações -->
+    <div id="capri-viewport" class="capri-viewport state-arrive">
+      <canvas id="capri-canvas"></canvas>
+    </div>
+
+    <!-- Painel de Controle Integrado -->
+    <div class="capri-panel">
+      <div class="capri-header">
+        <div class="capri-info">
+          <span class="capri-name">Capri Assistant</span>
+          <span class="capri-status-dot"></span>
+        </div>
+        <div class="capri-actions">
+          <button class="action-badge" onclick="capriController.triggerBehavior('teleport')">Teleport</button>
+          <button class="action-badge" onclick="capriController.triggerBehavior('crouch')">Crouch</button>
+        </div>
+      </div>
+      <div id="capri-dialogue" class="capri-dialogue">Carregando assistente e comportamentos integrados...</div>
+      
+      <div class="capri-input-box">
+        <input type="text" id="user-input" placeholder="Digite uma mensagem para a Capri...">
+        <button id="send-btn">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

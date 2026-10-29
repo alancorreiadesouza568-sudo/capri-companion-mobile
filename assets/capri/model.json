@@ -1,0 +1,9 @@
+{
+  "name": "Capri Assistant Mobile",
+  "version": "2.0.0",
+  "states": ["arrive", "crouch", "teleport", "interact", "idle"],
+  "settings": {
+    "responsive": true,
+    "mobileOptimized": true
+  }
+}
